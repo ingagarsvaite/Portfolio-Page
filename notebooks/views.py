@@ -24,7 +24,7 @@ class MgView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        notebook_filename = 'notebooks/jupyter/magnesium.ipynb'
+        notebook_filename = '/home/ingagarsvaite/-ingagarsvaite-.github.io/notebooks/jupyter/magnesium.ipynb'
         html_exporter = HTMLExporter()
         body, resources = html_exporter.from_file(open(notebook_filename, 'rb'))
 
